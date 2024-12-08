@@ -1,0 +1,12 @@
+{
+    "main_agency": "T-สืบสวน",
+    "team_name": "ชุดสืบสวน",
+    "details": "ทดสอบ",
+    "team_within": {
+        "leader":{
+            "_id":"",
+            "name":"วรภพ สืบสวน"
+        }
+    },
+    "operation_officers": []
+}

@@ -1,0 +1,68 @@
+.add-comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: come-in 1.5s ease-in-out;
+  position: relative;
+
+  .comment-input {
+    position: relative;
+    border: 0;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    resize: none;
+    scrollbar-width: none;
+    background-color: #242b36;
+    width: calc(100% - 50px);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.22);
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &:focus {
+      outline: 1.5px solid hsl(211, 10%, 45%);
+    }
+  }
+
+  .send-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: absolute;
+    right: 2em;
+  }
+
+  .senerio-list {
+    .ant-upload-list {
+      position: absolute;
+    }
+  }
+
+  .add-btn {
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 0 5px;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    // &:hover {
+    //   opacity: 0.65;
+    //   animation: spinX 1s linear infinite;
+    // }
+  }
+}
+
+@keyframes spinX {
+  100% { 
+    -webkit-transform: rotateX(360deg); 
+    transform: rotateX(360deg); 
+  }
+}

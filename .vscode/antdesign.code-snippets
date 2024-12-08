@@ -1,0 +1,26 @@
+{
+	"Col Form Input": {
+		"scope": "javascript",
+		"prefix": "colFormInput",
+		"body": [
+			"<Col span={${1:8}}>",
+			"\t<Form.Item label=\"${2}\">",
+			"\t\t<Input placeholder=\"กรอก${2}\"/>",
+			"\t</Form.Item>",
+			"</Col>"
+		],
+		"description": "Col Form Input"
+	},
+	"Col Form Select": {
+		"scope": "javascript",
+		"prefix": "colFormSelect",
+		"body": [
+			"<Col span={${1:8}}>",
+			"\t<Form.Item label=\"${2}\">",
+			"\t\t<Select placeholder=\"เลือก${2}\"/>",
+			"\t</Form.Item>",
+			"</Col>"
+		],
+		"description": "Col Form Input"
+	}
+}

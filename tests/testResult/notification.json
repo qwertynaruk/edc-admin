@@ -1,0 +1,46 @@
+{
+    "personnel": {
+        "create" : {
+            "success" : {
+                "title" : "สร้างกำลังพลสำเร็จ",
+                "description" : ""
+            },
+            "error" : {
+                "title" : "สร้างกำลังพลไม่สำเร็จ",
+                "description" : ""
+            }
+        },
+        "edit" : {
+            "success" : {
+                "title" : "แก้ไขกำลังพลสำเร็จ",
+                "description" : ""
+            },
+            "error" : {
+                "title" : "แก้ไขกำลังพลไม่สำเร็จ",
+                "description" : ""
+            }
+        }
+    },
+    "investigate_team": {
+        "create": {
+            "success" : {
+                "title" : "สร้างทีมสำเร็จ",
+                "description": ""
+            },
+            "error" : {
+                "title" : "สร้างทีมไม่สำเร็จ",
+                "description": ""
+            }
+        },
+        "edit": {
+            "success": {
+                "title":"อัพเดตรายการสำเร็จ",
+                "description":""
+            },
+            "error":{
+                "title":"อัปเดตรายการไม่สำเร็จ",
+                "description":""
+            }
+        }
+    }
+}

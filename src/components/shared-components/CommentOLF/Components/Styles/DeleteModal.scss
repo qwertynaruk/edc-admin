@@ -1,0 +1,60 @@
+.delete-confirmation-wrapper{
+  position: fixed;
+  z-index: 100;
+  top: 0; left: 0;
+  height: 100vh;  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba($color: #000000, $alpha: 0.3);
+
+  .delete-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+
+    .title{
+      color: hsl(212, 24%, 26%);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .confirmation-message{
+      line-height: 1.5;
+      color: hsl(211, 10%, 45%);
+    }
+
+    .btn-container{
+      display: flex;
+      justify-content: space-between;
+
+      button{
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover{
+          opacity: 0.65;
+        }
+      }
+      
+      .cancel-btn{
+        background: hsl(211, 10%, 45%);
+      }
+
+      .delete-btn{
+        background: hsl(358, 79%, 66%);
+        color: hsl(0, 0%, 100%);
+      }
+    }
+  }
+}

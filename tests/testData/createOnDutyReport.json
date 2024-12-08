@@ -1,0 +1,23 @@
+{
+    "event_name" : "ทดสอบการสร้างรายงานปฏิบัติหน้าที่จาก playwright",
+    "start_date" : "2023-02-08",
+    "start_time" : "10:25:00",
+    "source" : "ได้รับแจ้ง",
+    "offence_type" : "คดีจราจร",
+    "plaint" : "บาดเจ็บเล็กน้อย",
+    "investigator" : "",
+    "inquisitor" : "",
+    "suppression" : "",
+    "location_search" : "",
+    "venue_type" : "",
+    "home_number" : "",
+    "village_group_number" : "",
+    "sub_alley" : "",
+    "road_name" : "",
+    "province" : "",
+    "city" : "",
+    "district" : "",
+    "zip_code" : "",
+    "liable_station" : "",
+    "inspection_area" : ""
+}

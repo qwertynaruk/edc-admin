@@ -1,0 +1,17 @@
+.row-dragging {
+  border: 1px solid #ccc;
+  z-index: 1000;
+  background-color: #1c2536;
+  height: 98px !important;
+  border-radius: 4px;
+}
+
+.row-dragging td {
+  padding: 8px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.row-dragging .drag-invisible {
+  display: none;
+}

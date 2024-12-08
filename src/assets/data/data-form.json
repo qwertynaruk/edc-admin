@@ -1,0 +1,1595 @@
+{
+   "extra_component_section":[
+      {
+         "key": "วันที่",
+         "label": "วันที่",
+         "placeholder": "เลือกวันที่",
+         "widget": "date-picker",
+         "question": "คำถามไม่ระบุชื่อ",
+         "widgetProps": { "style": { "width": "100%" } },
+         "visibility": []
+      },
+      {
+         "key": "เวลา",
+         "label": "เวลา",
+         "placeholder": "เลือกเวลา",
+         "widget": "time-picker",
+         "question": "คำถามไม่ระบุชื่อ",
+         "widgetProps": { "style": { "width": "100%" } },
+         "visibility": []
+      },
+      {
+         "key": "ช่องกรอกรายละเอียด",
+         "label": "ช่องกรอกรายละเอียด",
+         "placeholder": "กรอกรายละเอียด",
+         "widget": "textarea",
+         "question": "คำถามไม่ระบุชื่อ",
+         "visibility": []
+      },
+      {
+         "key": "ตัวเลข",
+         "label": "ตัวเลข",
+         "placeholder": "กรอกตัวเลข",
+         "widget": "number",
+         "question": "คำถามไม่ระบุชื่อ",
+         "visibility": []
+      },
+      {
+         "key": "หนึ่งตัวเลือก",
+         "label": "หนึ่งตัวเลือก",
+         "widget": "radio-group",
+
+         "widgetProps": {
+            "style": { "display": "flex", "flexDirection": "column" }
+         },
+         "options": [
+            {
+            "label": "ตัวเลือกที่ 1",
+            "value": "ตัวเลือกที่ 1"
+            },
+            {
+            "label": "ตัวเลือกที่ 2",
+            "value": "ตัวเลือกที่ 2"
+            },
+            { "label": "ตัวเลือกที่ 3", "value": "ตัวเลือกที่ 3" },
+            { "label": "ตัวเลือกที่ 4", "value": "ตัวเลือกที่ 4" }
+         ],
+         "question": "คำถามไม่ระบุชื่อ",
+         "visibility": []
+      },
+      {
+         "key": "หลายตัวเลือก",
+         "label": "หลายตัวเลือก",
+         "widget": "checkbox-group",
+         "tooltip": "This is the tooltip.",
+         "widgetProps": {
+            "style": { "display": "flex", "flexDirection": "column" }
+         },
+         "options": [
+            { "label": "ตัวเลือกที่ 1", "value": "ตัวเลือกที่ 1" },
+            {
+            "label": "ตัวเลือกที่ 2",
+            "value": "ตัวเลือกที่ 2",
+            "style": { "fontSize": "12px" }
+            }
+         ],
+         "question": "คำถามไม่ระบุชื่อ",
+         "visibility": []
+      },
+      {
+         "key": "ตัวเลือกเดียวแบบเลื่อนลง",
+         "label": "ตัวเลือกเดียวแบบเลื่อนลง",
+         "placeholder": "เลือกตัวเลือกเดียวแบบเลื่อนลง",
+         "widget": "select",
+         "widgetProps": { "defaultActiveFirstOption": true },
+         "options": [
+            { "label": "ตัวเลือกที่ 1", "value": "ตัวเลือกที่ 1" },
+            { "label": "ตัวเลือกที่ 2", "value": "ตัวเลือกที่ 2" },
+            { "label": "ตัวเลือกที่ 3", "value": "ตัวเลือกที่ 3" },
+            { "label": "ตัวเลือกที่ 4", "value": "ตัวเลือกที่ 4" }
+         ],
+         "question": "คำถามไม่ระบุชื่อ",
+         "visibility": []
+      },
+      {
+         "key": "ตัวเลือกหลายตัวแบบเลื่อนลง",
+         "label": "ตัวเลือกหลายตัวแบบเลื่อนลง",
+         "placeholder": "เลือกตัวเลือกหลายตัวแบบเลื่อนลง",
+         "widget": "select",
+         "widgetProps": { "defaultActiveFirstOption": true, "mode": "multiple" },
+         "options": [
+            { "label": "ตัวเลือกที่ 1", "value": "ตัวเลือกที่ 1" },
+            { "label": "ตัวเลือกที่ 2", "value": "ตัวเลือกที่ 2" },
+            { "label": "ตัวเลือกที่ 3", "value": "ตัวเลือกที่ 3" },
+            { "label": "ตัวเลือกที่ 4", "value": "ตัวเลือกที่ 4" }
+         ],
+         "question": "คำถามไม่ระบุชื่อ",
+         "visibility": []
+      }
+   ],
+   "map_component_section": {
+      "id": "location-with-map",
+      "key": "location-with-map",
+      "section_name": "แผนที่และข้อมูลจากแผนที่",
+      "formItemLayout": null,
+      "columns": 4,
+      "colon": true,
+      "disableRemoveField": true,
+      "component": [
+         {
+            "colSpan":4,
+            "key": "UnknowLocation-checkbox",
+            "label": "ไม่สามารถระบุสถานที่เกิดเหตุได้?",
+            "widget": "checkbox",
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         }, 
+         {
+            "colSpan": 4,
+            "key": "DetailsPlace",
+            "label": "รายละเอียดของสถานที่",
+            "placeholder": "ระบุรายละเอียดของสถานที่",
+            "visibility": [
+               {
+                  "action": true,
+                  "condition": {
+                     "all": [
+                        {
+                           "field": "UnknowLocation-checkbox",
+                           "op": "is",
+                           "value": true
+                        }
+                     ]
+                  },
+                  "name": "มองเห็นเมือเลือกอื่นๆ"
+               }
+            ],
+            "widget": "textarea",
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "colSpan":4,
+            "label":"GoogleMap",
+            "is_identity":false,
+            "key":"GoogleMap-system",
+            "required":false,
+            "widget":"GoogleMap",
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"เลขที่",
+            "is_identity":false,
+            "key":"homeno-system",
+            "placeholder": "กรอกเลขที่",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"หมู่ที่",
+            "is_identity":false,
+            "key":"moo-system",
+            "placeholder": "กรอกหมู่ที่",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"ซอย",
+            "is_identity":false,
+            "key":"soi-system",
+            "placeholder": "กรอกซอย",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"ถนน",
+            "is_identity":false,
+            "key":"rd-system",
+            "placeholder": "กรอกถนน",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"เขต/อำเภอ",
+            "is_identity":false,
+            "key":"rd2-system",
+            "placeholder": "กรอกเขต/อำเภอ",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"แขวง/ตำบล",
+            "is_identity":false,
+            "key":"rd3-system",
+            "placeholder": "กรอกแขวง/ตำบล",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"จังหวัด",
+            "is_identity":false,
+            "key":"province-system",
+            "placeholder": "กรอกจังหวัด",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "label":"รหัสไปรษณีย์",
+            "is_identity":false,
+            "key":"zipcode-system",
+            "placeholder": "กรอกรหัสไปรษณีย์",
+            "required":false,
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "colSpan":2,
+            "key": "PlaceType",
+            "label": "ประเภทของสถานที่",
+            "placeholder": "เลือกประเภทของสถานที่",
+            "widget": "select",
+            "options": [
+               {
+                 "label": "สถาบันการเงิน",
+                 "value": "01"
+               },
+               {
+                 "label": "ที่พักอาศัย",
+                 "value": "02"
+               },
+               {
+                 "label": "ร้านเครื่องประดับ (เพชร, พลอย, อื่นๆ)",
+                 "value": "03"
+               },
+               {
+                 "label": "โรงรับจำนำ",
+                 "value": "04"
+               },
+               {
+                 "label": "สถานีบริการน้ำมัน",
+                 "value": "05"
+               },
+               {
+                 "label": "สถานีบริการแก๊ส",
+                 "value": "06"
+               },
+               {
+                 "label": "สถานีบริการน้ำมัน+แก๊ส",
+                 "value": "07"
+               },
+               {
+                 "label": "ร้านสะดวกซื้อ",
+                 "value": "08"
+               },
+               {
+                 "label": "ศูนย์การค้า, ห้างสรรพสินค้า",
+                 "value": "09"
+               },
+               {
+                 "label": "โรงภาพยนตร์",
+                 "value": "10"
+               },
+               {
+                 "label": "ร้านค้าของเก่า",
+                 "value": "11"
+               },
+               {
+                 "label": "เต็นท์รถ",
+                 "value": "12"
+               },
+               {
+                 "label": "อู่ - บริการรถแท็กซี่ / สามล้อ",
+                 "value": "13"
+               },
+               {
+                 "label": "บริษัท/ร้าน/สถานที่จำหน่าย-ซ่อมรถยนต์",
+                 "value": "14"
+               },
+               {
+                 "label": "บริษัท/ร้าน/สถานที่จำหน่าย-ซ่อม จยย.",
+                 "value": "15"
+               },
+               {
+                 "label": "บริษัท/ร้าน/สถานที่จำหน่าย-ซ่อม จักรยาน",
+                 "value": "16"
+               },
+               {
+                 "label": "หน่วยราชการ, รัฐวิสาหกิจ",
+                 "value": "17"
+               },
+               {
+                 "label": "สถานศึกษา",
+                 "value": "18"
+               },
+               {
+                 "label": "สถานพยาบาล",
+                 "value": "19"
+               },
+               {
+                 "label": "สมาคม / มูลนิธิ / ชมรม",
+                 "value": "20"
+               },
+               {
+                 "label": "ศาสนสถาน (วัด / โบสถ์ / มัสยิด), สถานที่ปฏิบัติธรรม",
+                 "value": "21"
+               },
+               {
+                 "label": "สถานทูต / สถานกงศุล",
+                 "value": "22"
+               },
+               {
+                 "label": "ตลาดสด, ตลาดนัด, ตลาดโต้รุ่ง, ตลาดค้าส่ง",
+                 "value": "23"
+               },
+               {
+                 "label": "สวนสาธารณะ / สวนสัตว์",
+                 "value": "24"
+               },
+               {
+                 "label": "คิวรถตู้",
+                 "value": "25"
+               },
+               {
+                 "label": "คิว จยย.",
+                 "value": "26"
+               },
+               {
+                 "label": "สถานบริการ",
+                 "value": "27"
+               },
+               {
+                 "label": "ร้านอาหาร, ภัตตาคาร (นอกโรงแรม)",
+                 "value": "28"
+               },
+               {
+                 "label": "สะพานลอยคนข้าม",
+                 "value": "29"
+               },
+               {
+                 "label": "ชุมชน",
+                 "value": "30"
+               },
+               {
+                 "label": "ร้านค้าทอง",
+                 "value": "31"
+               },
+               {
+                 "label": "ท่าเรือ (เฉพาะ สน.ทางน้ำ)",
+                 "value": "32"
+               },
+               {
+                 "label": "สถานีรถไฟ/รถไฟลอยฟ้า/รถไฟใต้ดิน/สถานีขนส่ง",
+                 "value": "33"
+               },
+               {
+                 "label": "ฟาร์มเลี้ยงสัตว์",
+                 "value": "34"
+               },
+               {
+                 "label": "สวนสนุก",
+                 "value": "35"
+               },
+               {
+                 "label": "สนามแข่งรถ,สนามกีฬา",
+                 "value": "36"
+               },
+               {
+                 "label": "ไร่,สวน,พื้นที่เกษตรกรรม",
+                 "value": "37"
+               },
+               {
+                 "label": "เขื่อน, ฝาย, บึง, แหล่งเก็บน้ำ",
+                 "value": "38"
+               },
+               {
+                 "label": "แหล่งมรดกโลก",
+                 "value": "39"
+               },
+               {
+                 "label": "การขนส่งมวลชน",
+                 "value": "40"
+               },
+               {
+                 "label": "ทางสัญจร",
+                 "value": "41"
+               },
+               {
+                 "label": "ธุรกิจเกี่ยวกับทรัพยากรธรรมชาติ",
+                 "value": "42"
+               },
+               {
+                 "label": "ธุรกิจค้าของเก่า",
+                 "value": "43"
+               },
+               {
+                 "label": "ร้านจำหน่ายเครื่องประดับ",
+                 "value": "44"
+               },
+               {
+                 "label": "ศูนย์โทรคมนาคมและการสื่อสาร",
+                 "value": "45"
+               },
+               {
+                 "label": "สถานท่องเที่ยวทางธรรมชาติ",
+                 "value": "46"
+               },
+               {
+                 "label": "สถานที่เกี่ยวกับการเมือง",
+                 "value": "47"
+               },
+               {
+                 "label": "สถานที่เกี่ยวกับเกษตรกรรม",
+                 "value": "48"
+               },
+               {
+                 "label": "สถานที่เกี่ยวกับพลังงาน",
+                 "value": "49"
+               },
+               {
+                 "label": "สถานที่จอดรถ",
+                 "value": "50"
+               },
+               {
+                 "label": "สถานที่จำหน่ายเครื่องดื่ม/ไอศครีม",
+                 "value": "51"
+               },
+               {
+                 "label": "สถานที่จำหน่ายอาหาร",
+                 "value": "52"
+               },
+               {
+                 "label": "สถานที่ประกอบธุรกิจ",
+                 "value": "53"
+               },
+               {
+                 "label": "สถานที่ประกอบธุรกิจเกี่ยวกับการเงิน",
+                 "value": "54"
+               },
+               {
+                 "label": "สถานที่พักอาศัย",
+                 "value": "55"
+               },
+               {
+                 "label": "สถานที่ราชการ/รัฐวิสาหกิจ",
+                 "value": "56"
+               },
+               {
+                 "label": "สถานที่สันทนาการและกีฬา",
+                 "value": "57"
+               },
+               {
+                 "label": "สถานที่สำคัญทางประวัติศาสตร์",
+                 "value": "58"
+               },
+               {
+                 "label": "สถานประกอบการ",
+                 "value": "59"
+               },
+               {
+                 "label": "สถานประกอบการ/สถานบริการ",
+                 "value": "60"
+               },
+               {
+                 "label": "สถานประกอบการส่งเสริมสุขภาพ/ความงาม",
+                 "value": "62"
+               },
+               {
+                 "label": "สถานประกอบธุรกิจการค้า",
+                 "value": "63"
+               },
+               {
+                 "label": "สถานประกอบศาสนพิธี",
+                 "value": "64"
+               },
+               {
+                 "label": "ร้านตกแต่งรถยนต์",
+                 "value": "65"
+               },
+               {
+                 "label": "ร้านตกแต่งรถจักรยานยนต์",
+                 "value": "66"
+               },
+               {
+                 "label": "สถานที่สาธารณะ",
+                 "value": "67"
+               },
+               {
+                 "label": "สื่อสิงพิมพ์",
+                 "value": "68"
+               },
+               {
+                 "label": "แหล่งชุมชน",
+                 "value": "69"
+               },
+               {
+                 "label": "แหล่งน้ำ",
+                 "value": "70"
+               },
+               {
+                 "label": "องค์กรการกุศลและสาธารณประโยชน์",
+                 "value": "71"
+               },
+               {
+                 "label": "อุตสาหกรรมเกษตร",
+                 "value": "72"
+               },
+               {
+                 "label": "อุตสาหกรรมโรงงาน",
+                 "value": "73"
+               },
+               {
+                 "label": "อู่ซ่อมรถ/ร้านอะไหล่",
+                 "value": "74"
+               },
+               {
+                 "label": "สถานที่แข่งรถ/รถมอเตอร์ไซค์",
+                 "value": "75"
+               },
+               {
+                 "label": "ขนส่งโลจิสติกส์",
+                 "value": "76"
+               },
+               {
+                 "label": "กระทำผิดเกี่ยวกับหนี้นอกระบบ",
+                 "value": "77"
+               },
+               {
+                 "label": "ตู้เติมเงิน",
+                 "value": "78"
+               },
+               {
+                 "label": "เคาเตอร์เซอร์วิส",
+                 "value": "79"
+               }
+            ],
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "colSpan":2,
+            "key":"PublicPlace-checkbox",
+            "label":"สถานที่สาธารณะ?",
+            "widget":"checkbox",
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         },
+         {
+            "colSpan":3,
+            "key":"OtherPlace",
+            "label":"โปรดระบุ",
+            "widget":"textarea",
+            "placeholder": "ระบุประเภทสถานที่",
+            "visibility":[
+               {
+                  "name":"มองเห็นเมือเลือกอื่นๆ",
+                  "action":true,
+                  "condition":{
+                     "all":[
+                        {
+                           "field":"PlaceType",
+                           "op":"is",
+                           "value":"10"
+                        }
+                     ],
+                     "any":[
+                        
+                     ]
+                  },
+                  "show_options":[
+                     
+                  ]
+               }
+            ],
+            "formItemLayout":{
+               "labelCol":24,
+               "wrapperCol":24
+            }
+         }
+      ]
+   },
+   "component_section":[
+      {
+         "id":"IncidentDate",
+         "section_name":"วันที่และเวลา",
+         "columns":3,
+         "component":[
+            {
+               "key":"StartDateTime",
+               "label":"วัน/เวลาที่เกิดเหตุ",
+               "widget":"date-picker",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "key":"EndDateTime",
+               "label":"วัน/เวลาที่เหตุสิ้นสุด",
+               "widget":"date-picker",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "key":"IsNotEnd",
+               "label":"เหตุการณ์ยังไม่สิ้นสุด",
+               "widget":"checkbox",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "id":"LocationType",
+         "section_name":"รายละเอียดสถานที่",
+         "formItemLayout": null,
+         "columns":4,
+         "colon": true,
+         "component":[
+            {
+               "colSpan":4,
+               "key": "UnknowLocation-checkbox",
+               "label": "ไม่สามารถระบุสถานที่เกิดเหตุได้?",
+               "widget": "checkbox",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }, 
+            {
+               "colSpan": 4,
+               "key": "DetailsPlace",
+               "label": "รายละเอียดของสถานที่",
+               "visibility": [
+                  {
+                     "action": true,
+                     "condition": {
+                        "all": [
+                           {
+                              "field": "UnknowLocation-checkbox",
+                              "op": "is",
+                              "value": true
+                           }
+                        ]
+                     },
+                     "name": "มองเห็นเมือเลือกอื่นๆ"
+                  }
+               ],
+               "widget": "textarea",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":4,
+               "label":"GoogleMap",
+               "is_identity":false,
+               "key":"GoogleMap-system",
+               "required":false,
+               "widget":"GoogleMap",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"เลขที่",
+               "is_identity":false,
+               "key":"homeno-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"หมู่ที่",
+               "is_identity":false,
+               "key":"moo-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"ซอย",
+               "is_identity":false,
+               "key":"soi-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"ถนน",
+               "is_identity":false,
+               "key":"rd-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"เขต/อำเภอ",
+               "is_identity":false,
+               "key":"rd2-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"แขวง/ตำบล",
+               "is_identity":false,
+               "key":"rd3-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"จังหวัด",
+               "is_identity":false,
+               "key":"province-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รหัสไปรษณีย์",
+               "is_identity":false,
+               "key":"zipcode-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":2,
+               "key":"PlaceType",
+               "label":"ประเภทของสถานที่",
+               "widget":"select",
+               "options":[
+                  {
+                     "value":"01",
+                     "label":"Air/Bus/Train Terminal เครื่องบิน/รถบัส/รถไฟ"
+                  },
+                  {
+                     "value":"02",
+                     "label":"Bank/Savings and Loan ธนาคาร/สถาบันการเงิน และ สินเชื่อ"
+                  },
+                  {
+                     "value":"03",
+                     "label":"Bar/Nightclub บาร์/ไนต์คลับ"
+                  },
+                  {
+                     "value":"04",
+                     "label":"Church/Synagogue/Temple/Mosque โบสถ์/วัด/มัสยิด"
+                  },
+                  {
+                     "value":"05",
+                     "label":"Commercial/Office Building อาคารพาณิชย์/สำนักงาน"
+                  },
+                  {
+                     "value":"06",
+                     "label":"Construction Site สถานที่ก่อสร้าง"
+                  },
+                  {
+                     "value":"07",
+                     "label":"Convenience Store ร้านสะดวกซื้อ"
+                  },
+                  {
+                     "value":"08",
+                     "label":"Department/Discount Store ห้างสรรพสินค้า"
+                  },
+                  {
+                     "value":"20",
+                     "label":"ที่อยู่อาศัย/บ้าน"
+                  },
+                  {
+                     "value":"10",
+                     "label":"Other/Unknown อื่นๆ"
+                  }
+               ],
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":2,
+               "key":"PublicPlace-checkbox",
+               "label":"สถานที่สาธารณะ?",
+               "widget":"checkbox",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":3,
+               "key":"OtherPlace",
+               "label":"โปรดระบุ",
+               "widget":"textarea",
+               "visibility":[
+                  {
+                     "name":"มองเห็นเมือเลือกอื่นๆ",
+                     "action":true,
+                     "condition":{
+                        "all":[
+                           {
+                              "field":"PlaceType",
+                              "op":"is",
+                              "value":"10"
+                           }
+                        ],
+                        "any":[
+                           
+                        ]
+                     },
+                     "show_options":[
+                        
+                     ]
+                  }
+               ],
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "columns":2,
+         "section_name":"รายละเอียดผู้สอบถาม",
+         "id":"ReporterDetail",
+         "component":[
+            {
+               "label":"ชื่อ",
+               "is_identity":false,
+               "key":"name-system",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"นามสกุล",
+               "is_identity":false,
+               "key":"lastname-system",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "options":[
+                  {
+                     "value":"ชาย",
+                     "label":"ชาย"
+                  },
+                  {
+                     "value":"หญิง",
+                     "label":"หญิง"
+                  },
+                  {
+                     "value":"ไม่ระบุ",
+                     "label":"ไม่ระบุ"
+                  }
+               ],
+               "label":"เพศ",
+               "widget":"select",
+               "key":"sex-system",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"หมายเลขบัตรประจำตัวประชาชน",
+               "is_identity":false,
+               "key":"idcard-system",
+               "required":false,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "columns":2,
+         "section_name":"ช่องทางการติดต่อ",
+         "id":"ReporterContact",
+         "component":[
+            {
+               "label":"หมายเลขโทรศัพท์",
+               "is_identity":false,
+               "key":"contect-number-system",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "rules":[
+                  {
+                     "type":"email",
+                     "message":"อีเมลไม่ถูกต้อง"
+                  }
+               ],
+               "label":"อีเมลสำหรับติดต่อและติดตามเรื่อง",
+               "is_identity":true,
+               "key":"email-system",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "columns":3,
+         "id":"InfoDetail",
+         "section_name":"ข้อมูลที่ต้องการสอบถาม",
+         "component":[
+            {
+               "key":"title",
+               "label":"",
+               "placeholder":"โปรดระบุคำถาม",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":3,
+               "key":"Description",
+               "label":"รายละเอียด",
+               "widget":"textarea",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      }
+   ],
+   "case_component":[
+      {
+         "id":"CaseDetail-01",
+         "section_name":"รายละเอียดเหตุ",
+         "label_name":"รายละเอียดเหตุเบาะแส",
+         "columns":3,
+         "component":[
+            {
+               "colSpan":3,
+               "label":"ประเภทของเบาะแส",
+               "widget":"select",
+               "key":"EventType",
+               "options":[
+                  {
+                     "value":"บุคคลต้องสงสัย",
+                     "label":"บุคคลต้องสงสัย"
+                  },
+                  {
+                     "value":"รถต้องสงสัย",
+                     "label":"รถต้องสงสัย"
+                  },
+                  {
+                     "value":"วัตถุต้องสงสัย",
+                     "label":"วัตถุต้องสงสัย"
+                  },
+                  {
+                     "value":"กลิ่นต้องสงสัย",
+                     "label":"กลิ่นต้องสงสัย"
+                  },
+                  {
+                     "value":"เสียงร้องขอความช่วยเหลือ",
+                     "label":"เสียงร้องขอความช่วยเหลือ"
+                  },
+                  {
+                     "value":"พบบุคคลตามหมายจับ",
+                     "label":"พบบุคคลตามหมายจับ"
+                  },
+                  {
+                     "value":"อื่นๆ",
+                     "label":"อื่นๆ"
+                  }
+               ],
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":3,
+               "key":"OtherEvent",
+               "label":"โปรดระบุ",
+               "widget":"textarea",
+               "visibility":[
+                  {
+                     "name":"มองเห็นเมือเลือกอื่นๆ",
+                     "action":true,
+                     "condition":{
+                        "all":[
+                           {
+                              "field":"EventType",
+                              "op":"is",
+                              "value":"อื่นๆ"
+                           }
+                        ],
+                        "any":[
+                           
+                        ]
+                     },
+                     "show_options":[
+                        
+                     ]
+                  }
+               ],
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":3,
+               "key":"Description",
+               "label":"รายละเอียด",
+               "widget":"textarea",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "colSpan":3,
+               "label":"รูปภาพที่เกิดเหตุ",
+               "is_identity":false,
+               "key":"UploadCustom-system",
+               "widget":"UploadCustom",
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "id":"CaseDetail-02",
+         "section_name":"รายละเอียดเหตุ",
+         "label_name":"รายละเอียดเหตุอาชญากรรม",
+         "columns":3,
+         "component":[
+            {
+               "widget":"Cascader",
+               "options":[
+                  {
+                     "value":"ชีวิตร่างกาย",
+                     "children":[
+                        {
+                           "value":"ฆ่าผู้อื่น",
+                           "label":"ฆ่าผู้อื่น"
+                        },
+                        {
+                           "value":"ทำร้ายผู้อื่นถึงแก่ความตาย",
+                           "label":"ทำร้ายผู้อื่นถึงแก่ความตาย"
+                        },
+                        {
+                           "value":"พยายามฆ่า",
+                           "label":"พยายามฆ่า"
+                        },
+                        {
+                           "value":"ทำร้ายร่างกาย",
+                           "label":"ทำร้ายร่างกาย"
+                        },
+                        {
+                           "value":"ข่มขืนกระทำชำเรา",
+                           "label":"ข่มขืนกระทำชำเรา"
+                        },
+                        {
+                           "value":"อื่นๆ",
+                           "label":"อื่นๆ"
+                        }
+                     ],
+                     "label":"ชีวิตร่างกาย"
+                  },
+                  {
+                     "value":"ทรัพย์",
+                     "children":[
+                        {
+                           "value":"ปล้นทรัพย์",
+                           "label":"ปล้นทรัพย์"
+                        },
+                        {
+                           "value":"ชิงทรัพย์",
+                           "label":"ชิงทรัพย์"
+                        },
+                        {
+                           "value":"วิ่งราวทรัพย์",
+                           "label":"วิ่งราวทรัพย์"
+                        },
+                        {
+                           "value":"ลักทรัพย์",
+                           "label":"ลักทรัพย์"
+                        },
+                        {
+                           "value":"กรรโชกทรัพย์",
+                           "label":"กรรโชกทรัพย์"
+                        },
+                        {
+                           "value":"ฉ้อโกง",
+                           "label":"ฉ้อโกง"
+                        },
+                        {
+                           "value":"ยักยอกทรัพย์",
+                           "label":"ยักยอกทรัพย์"
+                        },
+                        {
+                           "value":"ทำให้เสียทรัพย์",
+                           "label":"ทำให้เสียทรัพย์"
+                        },
+                        {
+                           "value":"รับของโจร",
+                           "label":"รับของโจร"
+                        },
+                        {
+                           "value":"ลักพาเรียกค่าไถ่",
+                           "label":"ลักพาเรียกค่าไถ่"
+                        },
+                        {
+                           "value":"วางเพลิง",
+                           "label":"วางเพลิง"
+                        },
+                        {
+                           "value":"อื่นๆ",
+                           "label":"อื่นๆ"
+                        }
+                     ],
+                     "label":"ทรัพย์"
+                  },
+                  {
+                     "value":"ยาเสพติด",
+                     "children":[
+                        {
+                           "value":"ผลิต",
+                           "label":"ผลิต"
+                        },
+                        {
+                           "value":"นําเข้า",
+                           "label":"นําเข้า"
+                        },
+                        {
+                           "value":"ส่งออก",
+                           "label":"ส่งออก"
+                        },
+                        {
+                           "value":"จําหน่าย",
+                           "label":"จําหน่าย"
+                        },
+                        {
+                           "value":"ครอบครองเพื่อจําหน่าย",
+                           "label":"ครอบครองเพื่อจําหน่าย"
+                        },
+                        {
+                           "value":"ครอบครอง",
+                           "label":"ครอบครอง"
+                        },
+                        {
+                           "value":"เสพยาเสพติด",
+                           "label":"เสพยาเสพติด"
+                        },
+                        {
+                           "value":"อื่นๆ",
+                           "label":"อื่นๆ"
+                        }
+                     ],
+                     "label":"ยาเสพติด"
+                  },
+                  {
+                     "value":"อาวุธปืนและวัตถุระเบิด",
+                     "children":[
+                        {
+                           "value":"อาวุธปืนสงคราม (ไม่สามารถออกใบอนุญาตได้)",
+                           "label":"อาวุธปืนสงคราม (ไม่สามารถออกใบอนุญาตได้)"
+                        },
+                        {
+                           "value":"อาวุธปืนธรรมดา (ไม่มีทะเบียน)",
+                           "label":"อาวุธปืนธรรมดา (ไม่มีทะเบียน)"
+                        },
+                        {
+                           "value":"อาวุธปืนธรรมดา (มีทะเบียน)",
+                           "label":"อาวุธปืนธรรมดา (มีทะเบียน)"
+                        },
+                        {
+                           "value":"วัตถุระเบิด",
+                           "label":"วัตถุระเบิด"
+                        },
+                        {
+                           "value":"อื่นๆ",
+                           "label":"อื่นๆ"
+                        }
+                     ],
+                     "label":"อาวุธปืนและวัตถุระเบิด"
+                  }
+               ],
+               "readOnly":"true",
+               "label":"ประเภทของเหตุ",
+               "key":"EventType",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"โปรดระบุ",
+               "widget":"textarea",
+               "visibility":[
+                  {
+                     "name":"มองเห็นเมือเลือกอื่นๆ",
+                     "action":true,
+                     "condition":{
+                        "all":[
+                           {
+                              "field":"EventType",
+                              "op":"is",
+                              "value":"อื่นๆ"
+                           }
+                        ],
+                        "any":[
+                           
+                        ]
+                     },
+                     "show_options":[
+                        
+                     ]
+                  }
+               ],
+               "key":"OtherEvent",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รายละเอียดการเกิดเหตุ",
+               "widget":"textarea",
+               "key":"Description",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รูปภาพที่เกิดเหตุ",
+               "is_identity":false,
+               "widget":"UploadCustom",
+               "key":"UploadCustom-system",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "id":"CaseDetail-03",
+         "section_name":"รายละเอียดปัญหา",
+         "label_name":"รายละเอียดเหตุปัญหาจราจร",
+         "columns":3,
+         "component":[
+            {
+               "widget":"select",
+               "options":[
+                  {
+                     "value":"อุบัติเหตุจราจรในพื้นที่ บก.",
+                     "label":"อุบัติเหตุจราจรในพื้นที่ บก."
+                  },
+                  {
+                     "value":"อุบัติเหตุจราจร (หลบหนี) โดยรถยนต์",
+                     "label":"อุบัติเหตุจราจร (หลบหนี) โดยรถยนต์"
+                  },
+                  {
+                     "value":"อุบัติเหตุจราจรในพื้นที่ทางหลวง",
+                     "label":"อุบัติเหตุจราจรในพื้นที่ทางหลวง"
+                  },
+                  {
+                     "value":"อุบัติเหตุจราจร (หลบหนี) โดยรถจยย.",
+                     "label":"อุบัติเหตุจราจร (หลบหนี) โดยรถจยย."
+                  },
+                  {
+                     "value":"อุบัติเหตุจราจร",
+                     "label":"อุบัติเหตุจราจร"
+                  },
+                  {
+                     "value":"อุบัติเหตุจราจร หลบหนี",
+                     "label":"อุบัติเหตุจราจร หลบหนี"
+                  },
+                  {
+                     "value":"จอดรถกีดขวางการจราจร",
+                     "label":"จอดรถกีดขวางการจราจร"
+                  },
+                  {
+                     "value":"ตั้งวางสิ่งของกีดขวางการจราจร",
+                     "label":"ตั้งวางสิ่งของกีดขวางการจราจร"
+                  },
+                  {
+                     "value":"ขับรถประมาทหวาดเสียว",
+                     "label":"ขับรถประมาทหวาดเสียว"
+                  },
+                  {
+                     "value":"แข่งรถจักรยานยนต์",
+                     "label":"แข่งรถจักรยานยนต์"
+                  },
+                  {
+                     "value":"แข่งรถยนต์",
+                     "label":"แข่งรถยนต์"
+                  },
+                  {
+                     "value":"อื่นๆ",
+                     "label":"อื่นๆ"
+                  }
+               ],
+               "label":"ประเภทของปัญหาจราจร",
+               "key":"EventType",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"โปรดระบุ",
+               "widget":"textarea",
+               "visibility":[
+                  {
+                     "name":"มองเห็นเมือเลือกอื่นๆ",
+                     "action":true,
+                     "condition":{
+                        "all":[
+                           {
+                              "field":"EventType",
+                              "op":"is",
+                              "value":"อื่นๆ"
+                           }
+                        ],
+                        "any":[
+                           
+                        ]
+                     },
+                     "show_options":[
+                        
+                     ]
+                  }
+               ],
+               "key":"OtherEvent",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รายละเอียดการเกิดเหตุ",
+               "widget":"textarea",
+               "key":"Description",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รูปภาพที่เกิดเหตุ",
+               "is_identity":false,
+               "widget":"UploadCustom",
+               "key":"UploadCustom-system",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      },
+      {
+         "id":"CaseDetail",
+         "section_name":"รายละเอียดปัญหา",
+         "label_name":"รายละเอียดเหตุปัญหาอื่น ๆ",
+         "columns":3,
+         "component":[
+            {
+               "widget":"select",
+               "options":[
+                  {
+                     "value":"การพนัน",
+                     "label":"การพนัน"
+                  },
+                  {
+                     "value":"ยาเสพติด",
+                     "label":"ยาเสพติด"
+                  },
+                  {
+                     "value":"คนต่างด้าว",
+                     "label":"คนต่างด้าว"
+                  },
+                  {
+                     "value":"สถานบริการ",
+                     "label":"สถานบริการ"
+                  },
+                  {
+                     "value":"สิ่งลามกอนาจาร",
+                     "label":"สิ่งลามกอนาจาร"
+                  },
+                  {
+                     "value":"ค้าประเวณี",
+                     "label":"ค้าประเวณี"
+                  },
+                  {
+                     "value":"สาดน้ำ",
+                     "label":"สาดน้ำ"
+                  },
+                  {
+                     "value":"จุดประทัด",
+                     "label":"จุดประทัด"
+                  },
+                  {
+                     "value":"จำหน่ายดอกไม้เพลิง",
+                     "label":"จำหน่ายดอกไม้เพลิง"
+                  },
+                  {
+                     "value":"ก่อความเดือดร้อนรำคาญ",
+                     "label":"ก่อความเดือดร้อนรำคาญ"
+                  },
+                  {
+                     "value":"เมาสุรา",
+                     "label":"เมาสุรา"
+                  },
+                  {
+                     "value":"ก่อสร้างส่งเสียงดัง",
+                     "label":"ก่อสร้างส่งเสียงดัง"
+                  },
+                  {
+                     "value":"งานเลี้ยงส่งเสียงดัง",
+                     "label":"งานเลี้ยงส่งเสียงดัง"
+                  },
+                  {
+                     "value":"ซ่อมรถส่งเสียงดัง",
+                     "label":"ซ่อมรถส่งเสียงดัง"
+                  },
+                  {
+                     "value":"วัยรุ่นจับกลุ่มมั่วสุมส่งเสียงดัง",
+                     "label":"วัยรุ่นจับกลุ่มมั่วสุมส่งเสียงดัง"
+                  },
+                  {
+                     "value":"เผาขยะก่อความเดือดร้อน",
+                     "label":"เผาขยะก่อความเดือดร้อน"
+                  },
+                  {
+                     "value":"สัตว์เข้าบ้าน",
+                     "label":"สัตว์เข้าบ้าน"
+                  },
+                  {
+                     "value":"สัตว์อาละวาด",
+                     "label":"สัตว์อาละวาด"
+                  },
+                  {
+                     "value":"อื่นๆ",
+                     "label":"อื่นๆ"
+                  }
+               ],
+               "label":"ประเภทของปัญหา",
+               "key":"EventType",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"โปรดระบุ",
+               "widget":"textarea",
+               "visibility":[
+                  {
+                     "name":"มองเห็นเมือเลือกอื่นๆ",
+                     "action":true,
+                     "condition":{
+                        "all":[
+                           {
+                              "field":"EventType",
+                              "op":"is",
+                              "value":"อื่นๆ"
+                           }
+                        ],
+                        "any":[
+                           
+                        ]
+                     },
+                     "show_options":[
+                        
+                     ]
+                  }
+               ],
+               "key":"OtherEvent",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รายละเอียดการเกิดเหตุ",
+               "widget":"textarea",
+               "key":"Description",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            },
+            {
+               "label":"รูปภาพที่เกิดเหตุ",
+               "is_identity":false,
+               "widget":"UploadCustom",
+               "key":"UploadCustom-system",
+               "colSpan":3,
+               "formItemLayout":{
+                  "labelCol":24,
+                  "wrapperCol":24
+               }
+            }
+         ]
+      }
+   ]
+}

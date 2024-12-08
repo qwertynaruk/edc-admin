@@ -1,0 +1,10 @@
+.input-input-placeholder {
+  color: #ffffff;
+}
+.input-input-placeholder::placeholder {
+  color: #a5a5a5;
+}
+.swal2-icon-custom-color {
+  border-color: red !important;
+  color: red !important;
+}

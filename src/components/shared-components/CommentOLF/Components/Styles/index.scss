@@ -1,0 +1,16 @@
+/* ------------------- */
+/* utility classes */
+/* ------------------- */
+
+.display--none {
+  display: none !important;
+}
+
+.overflow--hidden {
+  overflow-y: hidden;
+}
+
+::selection {
+  color: hsl(0, 0%, 100%);
+  background: hsl(211, 10%, 45%);
+}

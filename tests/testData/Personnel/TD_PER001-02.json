@@ -1,0 +1,17 @@
+{
+    "prefix_name": "พันตำรวจโท",
+    "first_name": "Automate-04",
+    "last_name": "สืบสวน",
+    "id_card_number": "2056623873267",
+    "email" : "Automate-04@udoncop.com",
+    "password":"Test123456*",
+    "date_of_birth": "2000-10-05T14:48:00.000Z",
+    "gender": "ชาย",
+    "phone_number": "1000000004",
+    "organization": "องค์กร ทดสอบระบบ",
+    "position": "ผู้บังคับหมู่",
+    "department": "T-สืบสวน",
+    "dominate": "ร้อยตำรวจตรี",
+    "is_active": true,
+    "station": "สถานีตำรวจภูธรเมืองอุดรธานี"
+}

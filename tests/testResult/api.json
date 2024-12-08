@@ -1,0 +1,33 @@
+{
+    "Login": {
+        "url" : "https://hq5wvne0w4.execute-api.ap-southeast-1.amazonaws.com/v1/login"
+    },
+    "personnel" : {
+        "create" : {
+            "method": "POST",
+            "url": "https://hq5wvne0w4.execute-api.ap-southeast-1.amazonaws.com/v1/sign_up_police"
+        },
+        "upload" : {
+            "method" : "POST",
+            "url": "/v1/upload-get-presign"
+        },
+        "edit" : {
+            "method": "PUT",
+            "url": "/v1/personnel"
+        }
+    },
+    "investigate_team" : {
+        "get_personnel": {
+            "method" : "GET",
+            "url" : "https://euqt90fmlc.execute-api.ap-southeast-1.amazonaws.com/v1/personnel?limit=5000"
+        },
+        "create": {
+            "method":"POST",
+            "url": "https://dymc81yg2j.execute-api.ap-southeast-1.amazonaws.com/v1/investigation_team"
+        },
+        "edit": {
+            "method":"PUT",
+            "url":"https://dymc81yg2j.execute-api.ap-southeast-1.amazonaws.com/v1/investigation_team?_id="
+        }
+    }
+}
